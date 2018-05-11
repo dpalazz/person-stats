@@ -1,10 +1,10 @@
-function updateHeading(event){
+function handleSubmit(event){
   event.preventDefault()
-  const heading = document.querySelector('h1')
+  const stats = document.querySelector('#stats')
   const f = event.target
   const name = f.personName.value
-  heading.textContent = name
+  stats.innerHTML = '<p>' + name + '</p>'
 }
 
 const personForm = document.querySelector('#person-form')
-personForm.addEventListener('submit', updateHeading)
+personForm.addEventListener('submit', handleSubmit)
