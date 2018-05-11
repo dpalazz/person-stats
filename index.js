@@ -3,7 +3,8 @@ function handleSubmit(event){
   const stats = document.querySelector('#stats')
   const f = event.target
   const name = f.personName.value
-  stats.innerHTML = '<p>' + name + '</p>'
+  const age = f.age.value
+  stats.innerHTML = '<p>' + name+ ', age ' + age + '</p>'
 }
 
 const personForm = document.querySelector('#person-form')
